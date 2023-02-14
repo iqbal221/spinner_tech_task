@@ -28,10 +28,10 @@ const Home = () => {
 
   return (
     <div>
-      <h1 className="text-center text-4xl font-bold text-violet-600 my-10">
+      <h1 className="text-center text-4xl font-bold text-violet-600 lg:my-10 my-4">
         Products To You
       </h1>
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 p-14">
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 lg:p-14 p-4">
         {currentProducts?.map((product) => (
           <ProductCard key={product.id} product={product}></ProductCard>
         ))}
